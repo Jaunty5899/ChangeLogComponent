@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 0px 40px 40px 40px;
+  gap: 20px;
+}
+.changeLogContainer {
+  display: flex;
+  gap: 30px;
+}
+.changeLogDate {
+  text-align: center;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-left: 20px;
+  gap: 20px;
+}
+.changeLog {
+  border-left: 2px solid white;
+}
+.changeLog > li::before {
+  content: "⬤";
+  color: white;
+  position: relative;
+  right: 27.5px;
+}
