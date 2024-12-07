@@ -12,7 +12,10 @@
   gap: 30px;
 }
 .changeLogDate {
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
+  opacity: 0.6;
 }
 ul {
   display: flex;
@@ -22,6 +25,8 @@ ul {
   gap: 20px;
 }
 .changeLog {
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-left: 2px solid white;
 }
 .changeLog > li::before {
