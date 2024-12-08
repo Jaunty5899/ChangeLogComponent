@@ -16,6 +16,7 @@
   padding-bottom: 20px;
   text-align: center;
   opacity: 0.6;
+  font-style: italic;
 }
 ul {
   display: flex;
