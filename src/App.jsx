@@ -1,5 +1,27 @@
 import "./App.css";
 
+let data = [
+  {
+    date: "September 3, 2024",
+    logData: "Announcing Projects on frontend Roadmap",
+  },
+  {
+    date: "Augugst 28, 2024",
+    logData: "Build your learning habits with learning streaks",
+  },
+  { date: "August 25, 2024", logData: "Git and GitHub Roadmap" },
+  {
+    date: "August 22, 2024",
+    logData: "Submit your project solution and get feedback",
+  },
+  { date: "August 15, 2024", logData: "Backend project Ideas" },
+  { date: "August 10, 2024", logData: "Redis Roadmap" },
+  {
+    date: "August 1, 2024",
+    logData: "Changelog page to help you stay in the loop",
+  },
+];
+
 function App() {
   return (
     <>
@@ -10,22 +32,14 @@ function App() {
         </span>
         <div className="changeLogContainer">
           <ul className="changeLogDate">
-            <li>September 3, 2024</li>
-            <li>Augugst 28, 2024</li>
-            <li>August 25, 2024</li>
-            <li>August 22, 2024</li>
-            <li>August 15, 2024</li>
-            <li>August 10, 2024</li>
-            <li>August 1, 2024</li>
+            {data.map((element) => {
+              return <li>{element.date}</li>;
+            })}
           </ul>
           <ul className="changeLog">
-            <li>Announcing Projects on frontend Roadmap</li>
-            <li>Build your learning habits with learning streaks</li>
-            <li>Git and GitHub Roadmap</li>
-            <li>Submit your project solution and get feedback</li>
-            <li>Backend project Ideas</li>
-            <li>Redis Roadmap</li>
-            <li>Changelog page to help you stay in the loop</li>
+            {data.map((element) => {
+              return <li>{element.logData}</li>;
+            })}
           </ul>
         </div>
         <button className="fullChangeLog">Visit Complete Changelog</button>
