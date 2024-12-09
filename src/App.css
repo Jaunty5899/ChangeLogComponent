@@ -36,3 +36,14 @@ ul {
   position: relative;
   right: 27.5px;
 }
+@media (prefers-color-scheme: light) {
+  .container {
+    border-color: #213547;
+  }
+  .changeLog {
+    border-left-color: #213547;
+  }
+  .changeLog > li::before {
+    color: #213547;
+  }
+}
